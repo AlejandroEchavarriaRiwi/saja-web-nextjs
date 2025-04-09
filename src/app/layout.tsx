@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "desarrollo web, diseño web, marketing digital, SEO, ecommerce, reparación de equipos, accesorios móviles, consolas videojuegos, Medellín, Colombia",
   authors: [{ name: "Saja", url: "https://www.saja.com.co" }],
   creator: "Saja",
+  icons: {
+    icon: "/isologo.svg",
+    shortcut: "/isologo.svg",
+    apple: "/isologo.svg",
+  },
   openGraph: {
     title: "Saja - Soluciones tecnológicas",
     description:
@@ -60,7 +65,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-       <link rel="icon" href="/isologo.svg" />
       <body className={inter.className}>
         {children}
         <Toaster />
