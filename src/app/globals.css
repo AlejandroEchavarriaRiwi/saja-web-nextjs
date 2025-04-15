@@ -7,7 +7,8 @@
     --azulprincipal: #2979FF;
     --verdementa: #00C9A7;
     --grisdetalles: #E0E0E0;
-    --background: #ffffff;
+    --background: rgb(247, 247, 247) 
+    ;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -31,7 +32,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: #E0E0E0;
+    --border: #f5f5f5;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 

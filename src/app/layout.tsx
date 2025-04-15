@@ -1,11 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Poppins } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
 
-const inter = Inter({ subsets: ["latin"] })
-
+const Poppin = Poppins({
+  subsets: ["latin"], weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",})
 export const metadata: Metadata = {
   title: "Saja - Soluciones tecnológicas",
   description:
@@ -65,7 +66,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={Poppin.className}>
         {children}
         <Toaster />
       </body>
