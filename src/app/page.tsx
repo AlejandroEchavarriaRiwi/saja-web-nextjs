@@ -1,5 +1,3 @@
-// pages/index.js
-
 "use client";
 
 import React from "react";
@@ -8,7 +6,6 @@ import MainHero from "@/components/ui/hero/mainHero";
 import MainBanner from "@/components/ui/banner/mainBanner";
 import LocationCard from "@/components/ui/cards/location";
 import { Toaster } from "@/components/ui/toaster";
-import ContactForm from "@/components/ui/forms/contactForm";
 import Link from "next/link";
 
 export default function Home() {
