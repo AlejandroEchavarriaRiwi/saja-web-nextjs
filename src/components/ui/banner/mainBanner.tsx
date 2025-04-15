@@ -12,8 +12,8 @@ export default function MainBanner() {
           Nuestros Servicios
         </h1>
         <div className="grid grid-cols-1 gap-4 mt-8 md:grid-cols-2 lg:grid-cols-3"> 
-          <ServicesCard icon={LuAppWindow} title="Desarrollo" description="Desarrollo web o movil adaptado a tus necesidades" />
-          <ServicesCard icon={GiAutoRepair} title="Reparacion" description="Servicio técnico especializado en celulares, computadores y consolas de videojuegos"/>
+          <ServicesCard icon={LuAppWindow} title="Desarrollo" description="Desarrollo web o móvil adaptado a tus necesidades" />
+          <ServicesCard icon={GiAutoRepair} title="Reparación" description="Servicio técnico especializado en celulares, computadores y consolas de videojuegos"/>
           <ServicesCard icon={LuHeadphones} title="Accesorios" description="Todos los gadgets que necesitas en tu mundo tecnológico"/>
         </div>
       </div>
