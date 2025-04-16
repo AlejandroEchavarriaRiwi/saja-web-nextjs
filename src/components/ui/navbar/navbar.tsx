@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,25 +8,26 @@ export default function Navbar() {
     return (
         <nav className="w-full  text-gray-800 relative">
             <div className="max-w-6xl mx-auto flex items-center justify-between pt-4 md:p-4 px-8">
-                {/* Logo */}
+                
                 <div className="flex-shrink-0">
+                    <Link href="/" className="flex items-center">
                     <Image
                         src={"/logo.svg"}
                         alt={"logo saja"}
                         width={1000}
                         height={500}
                         className="h-20 w-20"
-                    />
+                    /></Link>
                 </div>
                 {/* Menú para escritorio */}
                 <ul className="hidden md:flex md:space-x-8 items-center">
                     <li>
-                        <a href="#" className="block p-4 hover:text-primary">
+                        <a href="/develop" className="block p-4 hover:text-primary">
                             Desarrollo Web
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="block p-4 hover:text-primary">
+                        <a href="/repair" className="block p-4 hover:text-primary">
                             Reparaciones
                         </a>
                     </li>
