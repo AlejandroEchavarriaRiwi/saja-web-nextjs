@@ -3,6 +3,10 @@ import React from "react";
 import Navbar from "@/components/ui/navbar/navbar";
 import { Toaster } from "@/components/ui/toaster";
 import BottomFooter from "@/components/ui/footer/bottonFooter";
+import RepairHero from "@/components/ui/hero/repairHero";
+import RepairBanner from "@/components/ui/banner/repairBanner";
+import RepairBanner2 from "@/components/ui/banner/repairBanner2";
+
 
 export default function Home() {
   return (
@@ -10,6 +14,9 @@ export default function Home() {
       <header className="w-full flex justify-center">
         <Navbar />
       </header>
+      <RepairHero />
+      <RepairBanner />
+      <RepairBanner2 />
       <BottomFooter />
       <Toaster />
     </div>

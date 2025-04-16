@@ -13,7 +13,7 @@ const MapLeaflet = dynamic(() => import('../../MapLeaflet'), {
 
 const LocationCard: React.FC<LocationCardProps> = ({ title, lat, lng }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md dark:bg-gray-800 w-full mb-8">
+    <div className="flex flex-col items-center justify-center w-full">
       <MapLeaflet lat={lat} lng={lng} />
     </div>
   );
