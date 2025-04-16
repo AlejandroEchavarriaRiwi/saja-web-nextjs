@@ -15,6 +15,7 @@ export default {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         border: 'var(--border)',
+        grisdetalles: 'var(--grisdetalles)',
       },
       borderRadius: {
         lg: 'var(--radius)',

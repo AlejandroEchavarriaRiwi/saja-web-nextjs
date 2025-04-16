@@ -18,7 +18,7 @@ export default function MainHero() {
             Soluciones integrales para tus necesidades digitales.
           </p>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            <button className="mt-2 md:mt-8 px-4 py-1 md:px-6 md:py-3 md:text-lg font-semibold text-white bg-blue-900/90 rounded-md hover:bg-blue-800">
+            <button className="mt-2 md:mt-8 px-4 py-1 md:px-6 md:py-3 md:text-lg font-semibold text-white bg-primary rounded-md hover:bg-blue-800">
               Habla con BlueByte
             </button>
           </a>

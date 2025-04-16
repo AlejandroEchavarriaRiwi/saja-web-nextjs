@@ -1,7 +1,8 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface DevelopServicesCardProps {
-  icon: string
+  icon: string;
   title: string;
   description: string;
 }
@@ -12,12 +13,33 @@ export default function DevelopServicesCard({
   description,
 }: DevelopServicesCardProps) {
   return (
-    <div className="flex flex-col h-80 items-center text-center md:text-left lg:text-left justify-center p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
-      <Image src={icon} alt={"Icono"} width={100} height={100} />
-      <div className="flex flex-row items-center mb-4 px-5 pt-3 w-full justify-center text-center md:justify-start lg:justify-start">
-        <h2 className="text-lg md:text-4xl font-bold ml-4 text-gray-800 dark:text-white">{title}</h2>
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left h-auto w-full max-w-3xl p-6 bg-white rounded-2xl shadow-lg dark:bg-gray-800 gap-6 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]"
+    >
+      {/* Icono */}
+      <div className="flex-shrink-0">
+        <Image
+          src={icon}
+          alt="Icono"
+          width={80}
+          height={80}
+          className="mx-auto md:mx-0"
+        />
       </div>
-      <p className="mt-2 px-3 pb-3 text-gray-600 dark:text-gray-400 text-center">{description}</p>
-    </div>
+
+      {/* Contenido */}
+      <div className="flex flex-col justify-center">
+        <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+          {title}
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+          {description}
+        </p>
+      </div>
+    </motion.div>
   );
 }

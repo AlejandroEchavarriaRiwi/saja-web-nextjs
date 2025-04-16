@@ -1,10 +1,10 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Poppins } from "next/font/google"
+import { Open_Sans } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "@/components/ui/toaster"
 
-const Poppin = Poppins({
+const Poppin = Open_Sans({
   subsets: ["latin"], weight: ["400", "500", "600", "700"],
   variable: "--font-poppins",})
 export const metadata: Metadata = {

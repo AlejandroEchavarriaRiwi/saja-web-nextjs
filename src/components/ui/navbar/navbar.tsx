@@ -22,14 +22,14 @@ export default function Navbar() {
                 {/* Menú para escritorio */}
                 <ul className="hidden md:flex md:space-x-8 items-center">
                     <li>
-                        <a href="/develop" className="block p-4 hover:text-primary">
+                        <Link href="/develop" className="block p-4 hover:text-primary">
                             Desarrollo Web
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/repair" className="block p-4 hover:text-primary">
+                        <Link href="/repair" className="block p-4 hover:text-primary">
                             Reparaciones
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#" className="block p-4 hover:text-primary">
@@ -70,14 +70,14 @@ export default function Navbar() {
                 } md:hidden absolute top-full left-0 w-full bg-white shadow-md z-10`}
             >
                 <li className="border-b">
-                    <a href="#" className="block p-4 hover:text-primary">
+                    <Link href="/develop" className="block p-4 hover:text-primary">
                         Desarrollo Web
-                    </a>
+                    </Link>
                 </li>
                 <li className="border-b">
-                    <a href="#" className="block p-4 hover:text-primary">
+                    <Link href="/repair" className="block p-4 hover:text-primary">
                         Reparaciones
-                    </a>
+                    </Link>
                 </li>
                 <li className="border-b">
                     <a href="#" className="block p-4 hover:text-primary">
