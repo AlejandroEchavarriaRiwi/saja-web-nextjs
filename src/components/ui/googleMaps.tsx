@@ -24,7 +24,7 @@ const MyGoogleMap: React.FC<MapProps> = ({
   className = "",
 }) => {
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API!,
   });
 
   if (loadError) return <p>Error al cargar el mapa</p>;
