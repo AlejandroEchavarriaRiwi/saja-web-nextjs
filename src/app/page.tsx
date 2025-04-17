@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Navbar from "@/components/ui/navbar/navbar";
 import MainHero from "@/components/ui/hero/mainHero";
 import MainBanner from "@/components/ui/banner/mainBanner";
-import LocationCard from "@/components/ui/cards/location";
+import MyGoogleMap from "@/components/ui/googleMaps";
 import { Toaster } from "@/components/ui/toaster";
 import BottomFooter from "@/components/ui/footer/bottonFooter";
 
@@ -62,7 +62,10 @@ export default function Home() {
           >
             Ubicación
           </motion.h1>
-          <LocationCard title="Aquí estamos!" lat={6.20659} lng={-75.58634} />
+
+          
+          <MyGoogleMap lat={6.20659} lng={-75.58634} zoom={16} className=" w-full" />
+              {/* <LocationCard title="Aquí estamos!" lat={6.20659} lng={-75.58634} /> */}
         </motion.section>
       </main>
 

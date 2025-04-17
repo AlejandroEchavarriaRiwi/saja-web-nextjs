@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import LocationCard from "../cards/location";
+import MyGoogleMap from "@/components/ui/googleMaps";
 import Image from "next/image";
-import CalendlyModal from "@/components/ui/modal/cadendly"; 
+ 
 
 const faqData = [
   {
@@ -125,7 +125,7 @@ export default function RepairBanner2() {
         >
           <h2 className="text-xl font-semibold mb-2">Encuéntranos</h2>
           <div className="w-full rounded-md flex items-center justify-center">
-            <LocationCard title="Aquí estamos!" lat={6.20659} lng={-75.58634} />
+            <MyGoogleMap lat={6.20659} lng={-75.58634} zoom={16} className=" w-full" />
           </div>
         </motion.div>
       </motion.div>
