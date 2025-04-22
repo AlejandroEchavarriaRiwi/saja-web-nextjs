@@ -12,11 +12,11 @@ export default function Navbar() {
                 <div className="flex-shrink-0">
                     <Link href="/" className="flex items-center">
                     <Image
-                        src={"/logo.svg"}
+                        src={"/logo.png"}
                         alt={"logo saja"}
                         width={1000}
-                        height={500}
-                        className="h-20 w-20"
+                        height={1000}
+                        className="w-28 mb-4 md:mb-0"
                     /></Link>
                 </div>
                 {/* Menú para escritorio */}
