@@ -4,11 +4,16 @@
 
 @layer base {
   :root {
-    --azulprincipal: #2979FF;
-    --verdementa: #00C9A7;
-    --grisdetalles: #E0E0E0;
-    --background: rgb(247, 247, 247) 
-    ;
+    --color-blue: #2979ff;
+    --verdementa: #00c9a7;
+    --grisdetalles: #e0e0e0;
+    --color-white: rgb(250, 250, 250);
+    --color-gray: #f1f1f1;
+    --background: rgb(247, 247, 247);
+    --color-black: #1d1d1d;
+    --color-text: rgb(82, 82, 82);
+    --color-text-02: rgb(118, 118, 118);
+    --color-black-hover: #2e2e2e;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,10 +22,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: #2979FF;
+    --primary: #2979ff;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: #00C9A7;
+    --secondary: #00c9a7;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -37,6 +42,14 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+    --box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    /*border radius*/
+    --border-radius-small: 6px;
+    --border-radius-medium: 20px;
+
+    /* Spacing*/
+    --padding-big: 120px;
   }
 
   .dark {
@@ -44,15 +57,15 @@
     --foreground: 210 40% 98%;
 
     --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%  ;
+    --card-foreground: 210 40% 98%;
 
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: #82B1FF  ;
+    --primary: #82b1ff;
     --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: #00D8B6;
+    --secondary: #00d8b6;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
@@ -91,8 +104,19 @@
 
 body {
   -webkit-user-select: none; /* Safari */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* Internet Explorer/Edge */
-  user-select: none;         /* Non-prefixed version, currently supported by Chrome, Opera and Edge */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Edge */
 }
 
+.shadow-content {
+  box-shadow: var(--box-shadow);
+}
+
+p {
+  color: var(--color-text);
+}
+
+h2 {
+  line-height: 30px;
+}

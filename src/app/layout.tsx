@@ -1,12 +1,14 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Open_Sans } from "next/font/google"
-import "./globals.css"
-import { Toaster } from "@/components/ui/toaster"
+import type React from "react";
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
-const Poppin = Open_Sans({
-  subsets: ["latin"], weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",})
+const Poppin = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-poppins",
+});
 export const metadata: Metadata = {
   title: "Saja - Soluciones tecnológicas",
   description:
@@ -16,9 +18,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Saja", url: "https://www.saja.com.co" }],
   creator: "Saja",
   icons: {
-    icon: "/isologo.svg",
-    shortcut: "/isologo.svg",
-    apple: "/isologo.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   openGraph: {
     title: "Saja - Soluciones tecnológicas",
@@ -56,13 +58,12 @@ export const metadata: Metadata = {
     },
   },
   metadataBase: new URL("https://www.saja.com.co"),
-}
-
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="es">
@@ -71,6 +72,5 @@ export default function RootLayout({
         <Toaster />
       </body>
     </html>
-  )
+  );
 }
-
