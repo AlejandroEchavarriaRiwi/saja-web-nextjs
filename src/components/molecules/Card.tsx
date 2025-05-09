@@ -24,7 +24,7 @@ export default function Card({
         />
       </div>
       <h2 className="text-[1.2rem] font-medium">{title}</h2>
-      <p>{description}</p>
+      <p className="text-[var(--color-text-02)]">{description}</p>
       <div>
         <Button variant="default">{textButton}</Button>
       </div>

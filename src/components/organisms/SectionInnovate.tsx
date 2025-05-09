@@ -49,7 +49,7 @@ export default function SectionInnovate(): React.ReactNode {
             />
           </motion.div>
           <motion.div
-            className="w-[150px] md:w-[250px] z-10 absolute bottom-[-60px] md:bottom-2 left-[-10px] md:left-[-60px]"
+            className="w-[150px] md:w-[250px] z-10 absolute bottom-[-60px] md:bottom-2 left-[-10px  ] md:left-[-60px]"
             style={{ y: yBottom }}
           >
             <img

@@ -2,7 +2,7 @@ import Card from "../molecules/Card";
 
 export default function SectionCard(): React.ReactNode {
   return (
-    <section className="p-4 flex flex-col md:flex-row gap-10">
+    <section className="p-4 flex flex-col md:flex-row gap-10 md:pl-[var(--padding-big)] md:pr-[var(--padding-big)]">
       <Card
         alt_url="image discover our tailored"
         description="Join us in Medellin, where our expert team crafts custom software solutions to elevate your business. From bespoke applications to mobile innovations, we're here to help."

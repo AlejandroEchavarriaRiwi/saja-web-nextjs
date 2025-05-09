@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Header() {
   const [isActiveMenuMobile, setIsActiveMenuMobile] = useState<boolean>(false);
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-[var(--color-black)] p-4 md:pl-[120px] md:pr-[120px] text-white flex items-center justify-between">
+    <header className="fixed top-0 left-0 z-50 w-full bg-[var(--color-black-02)] p-4 md:pl-[120px] md:pr-[120px] text-white flex items-center justify-between">
       <div className="flex flex-col md:flex-row items-center gap-10">
         <Image
           src="/imagotipo.svg"
