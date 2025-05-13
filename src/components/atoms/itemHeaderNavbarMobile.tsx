@@ -1,18 +1,20 @@
 "use client";
-import { ReactElement, useState } from "react";
+import { ReactElement } from "react";
 
 interface IItemHeaderNavProps {
   name: string;
   icon?: ReactElement;
   content?: React.ReactNode;
   isMobil: boolean;
+  setActiveTab: (value: boolean) => void;
+  isActiveTab: boolean;
 }
 export default function ItemHeaderNavMobile({
   name,
   icon,
+  setActiveTab,
+  isActiveTab,
 }: IItemHeaderNavProps): React.ReactNode {
-  const [isActiveTab, setActiveTab] = useState<boolean>(false);
-
   return (
     <li
       onClick={() => {

@@ -10,7 +10,7 @@ export default function SectionExploreOur(): React.ReactNode {
         Join us in Medellin, Colombia, where we bring your software dreams to
         life and keep your devices running smoothly.
       </p>
-      <div className="flex flex-col gap-6 md:w-[65%]">
+      <div className="flex flex-col gap-6 w-[90%] md:w-[65%]">
         <ItemTabInformation
           text="Need help with software development?"
           textActive="Our friendly team crafts personalized software solutions to fit your unique business needs. Whether it's a new app or system updates, we're here to help."

@@ -1,10 +1,12 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import Header from "@/components/organisms/Header";
+import Footer from "@/components/organisms/Footer";
 
-const Poppin = Montserrat({
+const Poppin = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-poppins",
@@ -68,8 +70,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={Poppin.className}>
+        <Header />
         {children}
         <Toaster />
+        <Footer />
       </body>
     </html>
   );

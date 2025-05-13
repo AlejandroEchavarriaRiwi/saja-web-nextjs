@@ -3,5 +3,6 @@ import { ReactElement } from "react";
 export interface INavbarHeader {
     name: string,
     icon?: ReactElement,
-    content?: React.ReactNode
+    content?: React.ReactNode,
+    path?:string
 }

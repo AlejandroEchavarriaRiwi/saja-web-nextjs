@@ -20,4 +20,9 @@ export const DATA_NAVBAR_HEADER: INavbarHeader[] = [
     icon: <IconArrowDown />,
     content: <ContentSupportTab />,
   },
+  {
+    name: "Methodology",
+    icon: <IconArrowDown />,
+    content: <>methodology..</>,
+  },
 ];
