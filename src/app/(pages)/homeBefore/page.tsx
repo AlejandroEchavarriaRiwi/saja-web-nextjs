@@ -1,3 +1,4 @@
+'use client';
 import MainBanner from "@/components/ui/banner/mainBanner";
 import BottomFooter from "@/components/ui/footer/bottonFooter";
 import MainHero from "@/components/ui/hero/mainHero";
