@@ -11,7 +11,7 @@ import RepairBanner2 from "@/components/ui/banner/repairBanner2";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen justify-center items-center">
-      <header className="w-full flex justify-center">
+      <header className="w-full flex bg-red-700 justify-center">
         <Navbar />
       </header>
       <RepairHero />
